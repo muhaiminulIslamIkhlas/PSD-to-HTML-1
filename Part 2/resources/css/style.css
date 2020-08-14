@@ -8,8 +8,13 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 body{
     font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
 
 }
 
@@ -18,7 +23,15 @@ ul li{
 }
 
 h1{
-    font-size: 42px;
+    font-size: 4.2rem;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    visibility: hidden;
 }
 
 
@@ -27,8 +40,12 @@ h1{
 /*=====================*/
 
 .row{
-    max-width: 1140px;
+    max-width: 114rem;
     margin: 0 auto;
+}
+
+section{
+    padding: 8rem 0;
 }
 
 .btn:link,
@@ -37,12 +54,12 @@ h1{
     background: #eb7d4b;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 26px 80px;
-    font-size: 18px; 
+    padding: 2.6rem 8.0rem;
+    font-size: 1.8rem; 
     color: #fff; 
-    border-radius: 5px;
+    border-radius: .5rem;
     display: inline-block;
-    margin-top:45px ;
+    margin-top:4.5rem ;
 
 }
 
@@ -57,21 +74,21 @@ header{
 }
 
 .logo{
-    height: 33px;
+    height: 3.3rem;
     width: auto;
-    margin-top: 35px;
+    margin-top: 3.5rem;
     float: left;
 }
 
 .main-nav{
     float: right;
-    margin-top: 40px;
+    margin-top: 4.0rem;
 }
 
 .main-nav li{
     display: inline-block;
     
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 .main-nav li:first-child{
@@ -87,7 +104,7 @@ header{
     padding: 6px 16px;
     border-radius: 3px;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.6rem;
     transition: .3s;
    
 
@@ -100,7 +117,7 @@ header{
 
 .active{
     background:rgba(100, 58, 121, 1);
-    border-radius: 3px;
+    border-radius: .3rem;
 }
 
 .hero-text-box{
@@ -117,4 +134,16 @@ header{
 .btn-hero:visited{
     background: #eb7d4b;
     border-color: #c86a40;
+}
+
+
+/*=====================*/
+/*SERVICES SECTION */
+/*=====================*/
+
+.services-section{
+    background: #17c2a4;
+    color:#fff;
+    text-align: center;
+
 }
